@@ -1,4 +1,4 @@
-<IMG  src="https://github.com/oititec/liveness-android-sdk/blob/main/Documentation/Images/OitiHeader.png?raw=true"  alt="OitiHeader.png"/>
+<IMG  src="https://github.com/oititec/certiface-doc-versions-beta/blob/main/Documentation/Images/CertifaceHeader.png?raw=true"  alt="OitiHeader.png"/>
 
 # Projeto Demo Oiti-SDK
 
