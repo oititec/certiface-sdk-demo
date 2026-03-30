@@ -1,10 +1,10 @@
-<IMG  src="https://github.com/oititec/certiface-doc-versions-beta/blob/main/Documentation/Images/CertifaceHeader.png?raw=true"  alt="OitiHeader.png"/>
+<IMG  src="https://github.com/oititec/certiface-doc-versions-beta/blob/main/Documentation/Images/CertifaceHeader.png?raw=true"  alt="CertifaceHeader.png"/>
 
-# Projeto Demo Oiti-SDK
+# Projeto Demo Certiface-SDK
 
-Este repositório contém um projeto de demonstração para Oiti-SDK, fornecendo exemplos de utilização, configuração básica e personalização.
+Este repositório contém um projeto de demonstração para Certiface-SDK, fornecendo exemplos de utilização, configuração básica e personalização.
 
-Através deste demo, você aprenderá a integrar o Oiti-SDK em um aplicativo Android, configurando as dependências necessárias e executando chamadas de exemplo para verificação liveness.
+Através deste demo, você aprenderá a integrar o Certiface-SDK em um aplicativo Android, configurando as dependências necessárias e executando chamadas de exemplo para verificação liveness.
 
 ### Saiba mais
 
@@ -12,4 +12,4 @@ Através deste demo, você aprenderá a integrar o Oiti-SDK em um aplicativo And
 
 - Acessar quadro de **compatibilidade de sistemas e drivers**: [consulte este link](https://devcenter.certiface.io/docs/compatibilidade-dos-servicos).
 
-- Entrar em contato com o **atendimento Oiti**: [consulte este link](https://devcenter.certiface.io/docs/portal-de-atendimento).
+- Entrar em contato com o **atendimento Certiface**: [consulte este link](https://devcenter.certiface.io/docs/portal-de-atendimento).
