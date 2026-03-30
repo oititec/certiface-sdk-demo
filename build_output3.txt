@@ -1,0 +1,134 @@
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :app:generateDebugBuildConfig
+> Task :app:generateDebugResValues
+> Task :app:checkDebugAarMetadata
+> Task :app:mapDebugSourceSetPaths
+> Task :app:generateDebugResources
+> Task :app:packageDebugResources
+> Task :app:createDebugCompatibleScreenManifests
+> Task :app:extractDeepLinksDebug
+> Task :app:parseDebugLocalResources
+> Task :app:mergeDebugResources
+> Task :app:processDebugMainManifest
+> Task :app:processDebugManifest
+> Task :app:mergeDebugShaders
+> Task :app:compileDebugShaders NO-SOURCE
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :app:javaPreCompileDebug
+> Task :app:mergeDebugAssets
+> Task :app:desugarDebugFileDependencies
+> Task :app:compressDebugAssets
+> Task :app:mergeDebugJniLibFolders
+> Task :app:checkDebugDuplicateClasses
+> Task :app:mergeDebugNativeLibs
+> Task :app:processDebugManifestForPackage
+> Task :app:mergeExtDexDebug
+> Task :app:mergeLibDexDebug
+> Task :app:validateSigningDebug
+> Task :app:writeDebugAppMetadata
+> Task :app:writeDebugSigningConfigVersions
+
+> Task :app:stripDebugDebugSymbols
+C:/Users/Gustavo/AppData/Local/Android/Sdk/ndk/27.0.12077973/toolchains/llvm/prebuilt/windows-x86_64/bin/llvm-strip.exe: error: 'E:\projetos liveness\Android (Nativo)\oitisdkdemo\app\build\intermediates\merged_native_libs\debug\mergeDebugNativeLibs\out\lib\arm64-v8a\libiproov-com-calcifer-lib.so': The file was not recognized as a valid object file
+
+C:/Users/Gustavo/AppData/Local/Android/Sdk/ndk/27.0.12077973/toolchains/llvm/prebuilt/windows-x86_64/bin/llvm-strip.exe: error: Info field value 18 in section .rela.plt is invalid
+
+C:/Users/Gustavo/AppData/Local/Android/Sdk/ndk/27.0.12077973/toolchains/llvm/prebuilt/windows-x86_64/bin/llvm-strip.exe: error: 'E:\projetos liveness\Android (Nativo)\oitisdkdemo\app\build\intermediates\merged_native_libs\debug\mergeDebugNativeLibs\out\lib\armeabi-v7a\libiproov-com-calcifer-lib.so': The file was not recognized as a valid object file
+
+C:/Users/Gustavo/AppData/Local/Android/Sdk/ndk/27.0.12077973/toolchains/llvm/prebuilt/windows-x86_64/bin/llvm-strip.exe: error: Info field value 19 in section .rel.plt is invalid
+
+C:/Users/Gustavo/AppData/Local/Android/Sdk/ndk/27.0.12077973/toolchains/llvm/prebuilt/windows-x86_64/bin/llvm-strip.exe: error: 'E:\projetos liveness\Android (Nativo)\oitisdkdemo\app\build\intermediates\merged_native_libs\debug\mergeDebugNativeLibs\out\lib\x86\libiproov-com-calcifer-lib.so': The file was not recognized as a valid object file
+
+C:/Users/Gustavo/AppData/Local/Android/Sdk/ndk/27.0.12077973/toolchains/llvm/prebuilt/windows-x86_64/bin/llvm-strip.exe: error: 'E:\projetos liveness\Android (Nativo)\oitisdkdemo\app\build\intermediates\merged_native_libs\debug\mergeDebugNativeLibs\out\lib\x86_64\libiproov-com-calcifer-lib.so': The file was not recognized as a valid object file
+
+C:/Users/Gustavo/AppData/Local/Android/Sdk/ndk/27.0.12077973/toolchains/llvm/prebuilt/windows-x86_64/bin/llvm-strip.exe: error: Info field value 18 in section .rel.plt is invalid
+
+C:/Users/Gustavo/AppData/Local/Android/Sdk/ndk/27.0.12077973/toolchains/llvm/prebuilt/windows-x86_64/bin/llvm-strip.exe: error: Info field value 18 in section .rela.plt is invalid
+
+Unable to strip the following libraries, packaging them as they are: libiproov-com-calcifer-lib.so, libiproov-com-lib.so. Run with --info option to learn more.
+
+> Task :app:processDebugResources
+> Task :app:kspDebugKotlin
+
+> Task :app:compileDebugKotlin FAILED
+e: file:///E:/projetos%20liveness/Android%20(Nativo)/oitisdkdemo/app/src/main/java/br/com/certiface/certifacesdk/demo/IntegrityDebugActivity.kt:7:28 Unresolved reference 'integrity'.
+e: file:///E:/projetos%20liveness/Android%20(Nativo)/oitisdkdemo/app/src/main/java/br/com/certiface/certifacesdk/demo/IntegrityDebugActivity.kt:48:52 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///E:/projetos%20liveness/Android%20(Nativo)/oitisdkdemo/app/src/main/java/br/com/certiface/certifacesdk/demo/IntegrityDebugActivity.kt:48:80 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///E:/projetos%20liveness/Android%20(Nativo)/oitisdkdemo/app/src/main/java/br/com/certiface/certifacesdk/demo/IntegrityDebugActivity.kt:49:21 Unresolved reference 'IntegrityTokenHelper'.
+e: file:///E:/projetos%20liveness/Android%20(Nativo)/oitisdkdemo/app/src/main/java/br/com/certiface/certifacesdk/demo/IntegrityDebugActivity.kt:73:45 Unresolved reference 'IntegrityTokenHelper'.
+e: file:///E:/projetos%20liveness/Android%20(Nativo)/oitisdkdemo/app/src/main/java/br/com/certiface/certifacesdk/demo/IntegrityDebugActivity.kt:80:29 Unresolved reference 'payload'.
+e: file:///E:/projetos%20liveness/Android%20(Nativo)/oitisdkdemo/app/src/main/java/br/com/certiface/certifacesdk/demo/IntegrityDebugActivity.kt:85:36 Unresolved reference 'deviceInfo'.
+e: file:///E:/projetos%20liveness/Android%20(Nativo)/oitisdkdemo/app/src/main/java/br/com/certiface/certifacesdk/demo/IntegrityDebugActivity.kt:87:49 Unresolved reference 'deviceRecognitionVerdict'.
+e: file:///E:/projetos%20liveness/Android%20(Nativo)/oitisdkdemo/app/src/main/java/br/com/certiface/certifacesdk/demo/IntegrityDebugActivity.kt:88:56 Unresolved reference 'recentDeviceActivity'.
+e: file:///E:/projetos%20liveness/Android%20(Nativo)/oitisdkdemo/app/src/main/java/br/com/certiface/certifacesdk/demo/IntegrityDebugActivity.kt:91:46 Unresolved reference 'securityAnalysis'.
+e: file:///E:/projetos%20liveness/Android%20(Nativo)/oitisdkdemo/app/src/main/java/br/com/certiface/certifacesdk/demo/IntegrityDebugActivity.kt:94:61 Unresolved reference 'hasRoot'.
+e: file:///E:/projetos%20liveness/Android%20(Nativo)/oitisdkdemo/app/src/main/java/br/com/certiface/certifacesdk/demo/IntegrityDebugActivity.kt:95:63 Unresolved reference 'isEmulator'.
+e: file:///E:/projetos%20liveness/Android%20(Nativo)/oitisdkdemo/app/src/main/java/br/com/certiface/certifacesdk/demo/IntegrityDebugActivity.kt:96:70 Unresolved reference 'isCompromised'.
+e: file:///E:/projetos%20liveness/Android%20(Nativo)/oitisdkdemo/app/src/main/java/br/com/certiface/certifacesdk/demo/IntegrityDebugActivity.kt:97:61 Unresolved reference 'isSecure'.
+e: file:///E:/projetos%20liveness/Android%20(Nativo)/oitisdkdemo/app/src/main/java/br/com/certiface/certifacesdk/demo/IntegrityDebugActivity.kt:98:59 Unresolved reference 'reason'.
+e: file:///E:/projetos%20liveness/Android%20(Nativo)/oitisdkdemo/app/src/main/java/br/com/certiface/certifacesdk/demo/IntegrityDebugActivity.kt:107:33 Unresolved reference 'appInfo'.
+e: file:///E:/projetos%20liveness/Android%20(Nativo)/oitisdkdemo/app/src/main/java/br/com/certiface/certifacesdk/demo/IntegrityDebugActivity.kt:109:53 Unresolved reference 'appRecognitionVerdict'.
+e: file:///E:/projetos%20liveness/Android%20(Nativo)/oitisdkdemo/app/src/main/java/br/com/certiface/certifacesdk/demo/IntegrityDebugActivity.kt:110:50 Unresolved reference 'packageName'.
+e: file:///E:/projetos%20liveness/Android%20(Nativo)/oitisdkdemo/app/src/main/java/br/com/certiface/certifacesdk/demo/IntegrityDebugActivity.kt:111:50 Unresolved reference 'versionCode'.
+e: file:///E:/projetos%20liveness/Android%20(Nativo)/oitisdkdemo/app/src/main/java/br/com/certiface/certifacesdk/demo/IntegrityDebugActivity.kt:112:57 Unresolved reference 'certificateDigest'.
+e: file:///E:/projetos%20liveness/Android%20(Nativo)/oitisdkdemo/app/src/main/java/br/com/certiface/certifacesdk/demo/IntegrityDebugActivity.kt:120:29 Unresolved reference 'token'.
+e: file:///E:/projetos%20liveness/Android%20(Nativo)/oitisdkdemo/app/src/main/java/br/com/certiface/certifacesdk/demo/IntegrityDebugActivity.kt:120:45 Overload resolution ambiguity between candidates:
+fun String?.plus(other: Any?): String
+fun <T> Array<T>.plus(element: T): Array<T>
+fun <T> Iterable<T>.plus(element: T): List<T>
+fun <T> Collection<T>.plus(element: T): List<T>
+fun <T> Set<T>.plus(element: T): Set<T>
+fun <T> Sequence<T>.plus(element: T): Sequence<T>
+fun Char.plus(other: String): String
+e: file:///E:/projetos%20liveness/Android%20(Nativo)/oitisdkdemo/app/src/main/java/br/com/certiface/certifacesdk/demo/IntegrityDebugActivity.kt:127:29 Unresolved reference 'integrity'.
+e: file:///E:/projetos%20liveness/Android%20(Nativo)/oitisdkdemo/app/src/main/java/br/com/certiface/certifacesdk/demo/IntegrityDebugActivity.kt:127:90 Unresolved reference 'token'.
+e: file:///E:/projetos%20liveness/Android%20(Nativo)/oitisdkdemo/app/src/main/java/br/com/certiface/certifacesdk/demo/IntegrityDebugActivity.kt:129:19 Unresolved reference 'securityAnalysis'.
+e: file:///E:/projetos%20liveness/Android%20(Nativo)/oitisdkdemo/app/src/main/java/br/com/certiface/certifacesdk/demo/IntegrityDebugActivity.kt:129:37 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///E:/projetos%20liveness/Android%20(Nativo)/oitisdkdemo/app/src/main/java/br/com/certiface/certifacesdk/demo/IntegrityDebugActivity.kt:129:43 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///E:/projetos%20liveness/Android%20(Nativo)/oitisdkdemo/app/src/main/java/br/com/certiface/certifacesdk/demo/IntegrityDebugActivity.kt:130:63 Unresolved reference 'hasRoot'.
+e: file:///E:/projetos%20liveness/Android%20(Nativo)/oitisdkdemo/app/src/main/java/br/com/certiface/certifacesdk/demo/IntegrityDebugActivity.kt:130:92 Unresolved reference 'isEmulator'.
+e: file:///E:/projetos%20liveness/Android%20(Nativo)/oitisdkdemo/app/src/main/java/br/com/certiface/certifacesdk/demo/IntegrityDebugActivity.kt:130:122 Unresolved reference 'isSecure'.
+e: file:///E:/projetos%20liveness/Android%20(Nativo)/oitisdkdemo/app/src/main/java/br/com/certiface/certifacesdk/demo/examples/IProovModernCustomScreensExample.kt:61:28 Unresolved reference 'build'.
+e: file:///E:/projetos%20liveness/Android%20(Nativo)/oitisdkdemo/app/src/main/java/br/com/certiface/certifacesdk/demo/examples/IProovModernCustomScreensExample.kt:61:34 Unresolved reference 'setCustomScreens'.
+e: file:///E:/projetos%20liveness/Android%20(Nativo)/oitisdkdemo/app/src/main/java/br/com/certiface/certifacesdk/demo/examples/IProovModernCustomScreensExample.kt:62:13 Unresolved reference 'setCustomScreens'.
+e: file:///E:/projetos%20liveness/Android%20(Nativo)/oitisdkdemo/app/src/main/java/br/com/certiface/certifacesdk/demo/factories/DocumentThemeFactory.kt:30:9 Unresolved reference 'setEnableCnhDigital'.
+e: file:///E:/projetos%20liveness/Android%20(Nativo)/oitisdkdemo/app/src/main/java/br/com/certiface/certifacesdk/demo/factories/DocumentThemeFactory.kt:31:9 Unresolved reference 'setEnablePdfUpload'.
+e: file:///E:/projetos%20liveness/Android%20(Nativo)/oitisdkdemo/app/src/main/java/br/com/certiface/certifacesdk/demo/factories/DocumentThemeFactory.kt:40:13 Unresolved reference 'setEnableCnhDigital'.
+e: file:///E:/projetos%20liveness/Android%20(Nativo)/oitisdkdemo/app/src/main/java/br/com/certiface/certifacesdk/demo/factories/DocumentThemeFactory.kt:41:13 Unresolved reference 'setEnablePdfUpload'.
+e: file:///E:/projetos%20liveness/Android%20(Nativo)/oitisdkdemo/app/src/main/java/br/com/certiface/certifacesdk/demo/factories/IProovThemeFactory.kt:32:45 Unresolved reference 'examples'.
+e: file:///E:/projetos%20liveness/Android%20(Nativo)/oitisdkdemo/app/src/main/java/br/com/certiface/certifacesdk/demo/factories/IProovThemeFactory.kt:39:45 Unresolved reference 'examples'.
+e: file:///E:/projetos%20liveness/Android%20(Nativo)/oitisdkdemo/app/src/main/java/br/com/certiface/certifacesdk/demo/factories/IProovThemeFactory.kt:46:45 Unresolved reference 'examples'.
+e: file:///E:/projetos%20liveness/Android%20(Nativo)/oitisdkdemo/app/src/main/java/br/com/certiface/certifacesdk/demo/factories/IProovThemeFactory.kt:53:45 Unresolved reference 'examples'.
+e: file:///E:/projetos%20liveness/Android%20(Nativo)/oitisdkdemo/app/src/main/java/br/com/certiface/certifacesdk/demo/remote/factory/RetrofitFactory.kt:3:43 Unresolved reference 'network'.
+e: file:///E:/projetos%20liveness/Android%20(Nativo)/oitisdkdemo/app/src/main/java/br/com/certiface/certifacesdk/demo/remote/factory/RetrofitFactory.kt:4:43 Unresolved reference 'network'.
+e: file:///E:/projetos%20liveness/Android%20(Nativo)/oitisdkdemo/app/src/main/java/br/com/certiface/certifacesdk/demo/remote/factory/RetrofitFactory.kt:5:43 Unresolved reference 'network'.
+e: file:///E:/projetos%20liveness/Android%20(Nativo)/oitisdkdemo/app/src/main/java/br/com/certiface/certifacesdk/demo/remote/factory/RetrofitFactory.kt:16:9 Unresolved reference 'createGsonInstance'.
+e: file:///E:/projetos%20liveness/Android%20(Nativo)/oitisdkdemo/app/src/main/java/br/com/certiface/certifacesdk/demo/remote/factory/RetrofitFactory.kt:21:13 Unresolved reference 'createOkHttpClient'.
+e: file:///E:/projetos%20liveness/Android%20(Nativo)/oitisdkdemo/app/src/main/java/br/com/certiface/certifacesdk/demo/remote/factory/RetrofitFactory.kt:31:34 Unresolved reference 'NetworkEmptyBodyConverterFactory'.
+e: file:///E:/projetos%20liveness/Android%20(Nativo)/oitisdkdemo/app/src/main/java/br/com/certiface/certifacesdk/demo/ui/screens/CredentialScreen.kt:42:43 Unresolved reference 'network'.
+e: file:///E:/projetos%20liveness/Android%20(Nativo)/oitisdkdemo/app/src/main/java/br/com/certiface/certifacesdk/demo/ui/screens/CredentialScreen.kt:63:16 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///E:/projetos%20liveness/Android%20(Nativo)/oitisdkdemo/app/src/main/java/br/com/certiface/certifacesdk/demo/ui/screens/CredentialScreen.kt:63:25 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///E:/projetos%20liveness/Android%20(Nativo)/oitisdkdemo/app/src/main/java/br/com/certiface/certifacesdk/demo/ui/screens/CredentialScreen.kt:63:27 Unresolved reference 'createGsonInstance'.
+e: file:///E:/projetos%20liveness/Android%20(Nativo)/oitisdkdemo/app/src/main/java/br/com/certiface/certifacesdk/demo/ui/screens/HomeScreen.kt:281:45 Unresolved reference 'LivenessExecutor'.
+e: file:///E:/projetos%20liveness/Android%20(Nativo)/oitisdkdemo/app/src/main/java/br/com/certiface/certifacesdk/demo/ui/screens/HomeScreen.kt:284:55 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///E:/projetos%20liveness/Android%20(Nativo)/oitisdkdemo/app/src/main/java/br/com/certiface/certifacesdk/demo/ui/screens/HomeScreen.kt:288:53 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///E:/projetos%20liveness/Android%20(Nativo)/oitisdkdemo/app/src/main/java/br/com/certiface/certifacesdk/demo/ui/screens/HomeScreen.kt:290:73 Unresolved reference 'errorMessage'.
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:compileDebugKotlin'.
+> A failure occurred while executing org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction
+   > Compilation error. See log for more details
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+30 actionable tasks: 30 executed
+
+BUILD FAILED in 2m

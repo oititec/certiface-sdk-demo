@@ -1,0 +1,44 @@
+Starting a Gradle Daemon, 1 busy and 3 incompatible and 2 stopped Daemons could not be reused, use --status for details
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :app:generateDebugBuildConfig UP-TO-DATE
+> Task :app:checkDebugAarMetadata FAILED
+
+[Incubating] Problems report is available at: file:///E:/projetos%20liveness/Android%20(Nativo)/oitisdkdemo/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:checkDebugAarMetadata'.
+> Could not resolve all files for configuration ':app:debugRuntimeClasspath'.
+   > Could not find br.com.certiface:manager:1.0.0-snapshot-7.
+     Searched in the following locations:
+       - https://dl.google.com/dl/android/maven2/br/com/certiface/manager/1.0.0-snapshot-7/manager-1.0.0-snapshot-7.pom
+       - https://repo.maven.apache.org/maven2/br/com/certiface/manager/1.0.0-snapshot-7/manager-1.0.0-snapshot-7.pom
+       - https://raw.githubusercontent.com/oititec/android-oiti-sdk-versions/main/br/com/certiface/manager/1.0.0-snapshot-7/manager-1.0.0-snapshot-7.pom
+     Required by:
+         project :app
+   > Could not find br.com.oiti:oitisdk:1.1.0-snapshot-2.
+     Searched in the following locations:
+       - https://dl.google.com/dl/android/maven2/br/com/oiti/oitisdk/1.1.0-snapshot-2/oitisdk-1.1.0-snapshot-2.pom
+       - https://repo.maven.apache.org/maven2/br/com/oiti/oitisdk/1.1.0-snapshot-2/oitisdk-1.1.0-snapshot-2.pom
+       - https://raw.githubusercontent.com/oititec/android-oiti-sdk-versions/main/br/com/oiti/oitisdk/1.1.0-snapshot-2/oitisdk-1.1.0-snapshot-2.pom
+     Required by:
+         project :app
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+> Get more help at https://help.gradle.org.
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.13/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+2 actionable tasks: 1 executed, 1 up-to-date
+
+BUILD FAILED in 23s
