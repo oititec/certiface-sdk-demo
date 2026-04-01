@@ -3,13 +3,13 @@ package br.com.certiface.certifacesdk.demo
 import android.content.Context
 import br.com.certiface.doc.domain.models.CertifaceDocResponse
 import br.com.certiface.doc.domain.models.CertifaceDocResult
-import br.com.certiface.doc.manager.exports.Environment
-import br.com.certiface.doc.manager.exports.ResultCallback
 import br.com.certiface.doc.manager.exports.createSDKConfig
 import br.com.certiface.doc.manager.main.CertifaceDocSDK
-import br.com.oiti.domain.model.ErrorResponse
-import br.com.oiti.domain.model.LivenessErrorType
 import br.com.certiface.certifacesdk.demo.factories.DocumentThemeFactory
+import br.com.certiface.doc.manager.exports.Environment
+import br.com.certiface.doc.manager.exports.ResultCallback
+import br.com.certiface.domain.model.ErrorResponse
+import br.com.certiface.domain.model.LivenessErrorType
 
 class DocumentExecutor(private val appKey: String) {
 

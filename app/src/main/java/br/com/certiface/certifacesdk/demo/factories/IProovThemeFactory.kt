@@ -6,14 +6,15 @@ import br.com.certiface.certifacesdk.demo.examples.IProovModernInstructionScreen
 import br.com.certiface.certifacesdk.demo.examples.IProovModernLoadingDialog
 import br.com.certiface.certifacesdk.demo.examples.IProovModernPermissionScreen
 import br.com.certiface.certifacesdk.demo.examples.IProovModernResultScreen
-import br.com.oiti.domain.model.iproov.OrientationGPA
-import br.com.oiti.domain.model.iproov.OrientationLA
-import br.com.oiti.iproov.presentation.ui.builders.IProovCustomScreensBuilder
-import br.com.oiti.manager.exports.FilterTheme
-import br.com.oiti.manager.exports.IProovDrawablesKey
-import br.com.oiti.manager.exports.IProovFontsKey
-import br.com.oiti.manager.exports.IProovTheme
-import br.com.oiti.manager.exports.LineDrawingStyle
+import br.com.certiface.domain.model.iproov.OrientationGPA
+import br.com.certiface.domain.model.iproov.OrientationLA
+import br.com.certiface.iproov.presentation.ui.builders.IProovCustomScreensBuilder
+import br.com.certiface.manager.exports.FilterTheme
+import br.com.certiface.manager.exports.IProovDrawablesKey
+import br.com.certiface.manager.exports.IProovFontsKey
+import br.com.certiface.manager.exports.IProovTheme
+import br.com.certiface.manager.exports.LineDrawingStyle
+
 
 object IProovThemeFactory {
     fun create(
@@ -89,7 +90,7 @@ object IProovThemeFactory {
             )
 
             val iProovDrawables = mapOf(
-                IProovDrawablesKey.IPROOV_CLOSE_BUTTON to br.com.oiti.designsystem.R.drawable.close_icon,
+                IProovDrawablesKey.IPROOV_CLOSE_BUTTON to br.com.certiface.designsystem.R.drawable.close_icon,
                 IProovDrawablesKey.IPROOV_LOGO to "test",
                 IProovDrawablesKey.INSTRUCTIONS_FIRST_INSTRUCTION_ICON to R.drawable.backhand_left,
                 IProovDrawablesKey.INSTRUCTIONS_SECOND_INSTRUCTION_ICON to "backhand_right",
@@ -146,7 +147,7 @@ object IProovThemeFactory {
                 setStatusBarIsDarkIcons(false)
                 setBottomSheetColor("#333333")
                 setFirstInstructionText("teste 1")
-                setFirstInstructionIcon(br.com.oiti.designsystem.R.drawable.backhand_left)
+                setFirstInstructionIcon(br.com.certiface.designsystem.R.drawable.backhand_left)
                 setSecondInstructionText("teste 2")
                 setBottomSheetCornerRadius(16f)
                 setContinueButtonText("Startar")
@@ -174,7 +175,7 @@ object IProovThemeFactory {
 
             setResultTheme {
                 setSuccessBackgroundColor("#DFFFD6")
-                setSuccessIcon(br.com.oiti.designsystem.R.drawable.success_icon)
+                setSuccessIcon(br.com.certiface.designsystem.R.drawable.success_icon)
                 setSuccessText("Verificação concluída com sucesso!")
                 setSuccessTextColor("#0F9D58")
 
@@ -184,7 +185,7 @@ object IProovThemeFactory {
                 setStatusBarErrorIsDarkIcons(true)
 
                 setErrorBackgroundColor("#FFD6D6")
-                setErrorIcon(br.com.oiti.designsystem.R.drawable.error_icon)
+                setErrorIcon(br.com.certiface.designsystem.R.drawable.error_icon)
                 setErrorText("Algo deu errado na verificação.")
                 setErrorTextColor("#D93025")
 

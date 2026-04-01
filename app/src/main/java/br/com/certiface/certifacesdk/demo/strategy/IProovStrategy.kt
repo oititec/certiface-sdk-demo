@@ -1,12 +1,11 @@
 package br.com.certiface.certifacesdk.demo.strategy
 
 import android.content.Context
-import br.com.oiti.domain.callback.CertifaceResultCallback
-import br.com.oiti.iproov.domain.model.IProovManagerOptions
-import br.com.oiti.manager.exports.LivenessResult
-import br.com.oiti.manager.main.CertifaceSDK
-import br.com.oiti.manager.main.LivenessProvider
 import br.com.certiface.certifacesdk.demo.factories.IProovThemeFactory
+import br.com.certiface.domain.callback.CertifaceResultCallback
+import br.com.certiface.manager.exports.LivenessResult
+import br.com.certiface.manager.main.CertifaceSDK
+import br.com.certiface.manager.main.LivenessProvider
 
 class IProovStrategy: LivenessProviderStrategy {
     override fun start(
@@ -18,7 +17,7 @@ class IProovStrategy: LivenessProviderStrategy {
         callback: CertifaceResultCallback<LivenessResult>
     ) {
         val theme = IProovThemeFactory.create(isCustom, useCustomView, showInstructionScreen)
-        val opts  = IProovManagerOptions(appKey, theme)
+        val opts  = br.com.certiface.manager.exports.IProovManagerOptions(appKey, theme)
         val manager = CertifaceSDK.createLivenessManager(LivenessProvider.IPROOV)
         manager.start(opts, callback)
     }

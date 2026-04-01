@@ -83,7 +83,7 @@ fun MainLivenessScreen(context: Context) {
                                         val livenessResult = result?.let { docResult ->
                                             when (docResult) {
                                                 is br.com.certiface.doc.domain.models.CertifaceDocResult.Success -> {
-                                                    br.com.oiti.manager.exports.LivenessResult(
+                                                    br.com.certiface.manager.exports.LivenessResult(
                                                         valid = true,
                                                         codID = docResult.documentCode.toString(),
                                                         cause = null,

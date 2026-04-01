@@ -4,13 +4,13 @@ import br.com.certiface.certifacesdk.demo.R
 import br.com.certiface.certifacesdk.demo.examples.FacetecModernInstructionScreen
 import br.com.certiface.certifacesdk.demo.examples.FacetecModernLoadingDialog
 import br.com.certiface.certifacesdk.demo.examples.FacetecModernPermissionScreen
-import br.com.oiti.domain.model.facetec.FacetecButtonLocation
-import br.com.oiti.domain.model.facetec.FacetecExitAnimationStyle
-import br.com.oiti.domain.model.facetec.FacetecTheme
-import br.com.oiti.facetecsdk.presentation.ui.builders.FacetecCustomScreensBuilder
-import br.com.oiti.manager.exports.FacetecDrawablesKey
-import br.com.oiti.manager.exports.FacetecFontsKey
-import br.com.oiti.manager.exports.FacetecTextKey
+import br.com.certiface.domain.model.facetec.FacetecButtonLocation
+import br.com.certiface.domain.model.facetec.FacetecExitAnimationStyle
+import br.com.certiface.facetecsdk.presentation.ui.builders.FacetecCustomScreensBuilder
+import br.com.certiface.manager.exports.FacetecDrawablesKey
+import br.com.certiface.manager.exports.FacetecFontsKey
+import br.com.certiface.manager.exports.FacetecTextKey
+import br.com.certiface.manager.exports.FacetecTheme
 
 object FacetecThemeFactory {
 
@@ -116,13 +116,13 @@ object FacetecThemeFactory {
             )
 
             val facetecDrawables = mapOf(
-                FacetecDrawablesKey.FACETEC_RESULT_CUSTOM_ACTIVITY_INDICATOR_IMAGE to br.com.oiti.designsystem.R.drawable.success_icon,
-                FacetecDrawablesKey.FACETEC_RESULT_CUSTOM_ACTIVITY_INDICATOR_ANIMATION to br.com.oiti.facetecsdk.R.drawable.animated_activity_indicator_offwhite,
-                FacetecDrawablesKey.FACETEC_RESULT_ANIMATION_SUCCESS_BACKGROUND_IMAGE to br.com.oiti.designsystem.R.drawable.success_icon,
-                FacetecDrawablesKey.FACETEC_RESULT_ANIMATION_UNSUCESS_BACKGROUND_IMAGE to br.com.oiti.designsystem.R.drawable.error_icon,
-                FacetecDrawablesKey.FACETEC_RESULT_CUSTOM_ANIMATION_SUCCESS to br.com.oiti.facetecsdk.R.drawable.animated_success_offwhite,
-                FacetecDrawablesKey.FACETEC_RESULT_CUSTOM_ANIMATION_UNSUCCESS to br.com.oiti.facetecsdk.R.drawable.animated_unsuccess_offwhite,
-                FacetecDrawablesKey.FACETEC_CANCEL_BUTTON_CUSTOM_IMAGE to br.com.oiti.designsystem.R.drawable.close_icon,
+                FacetecDrawablesKey.FACETEC_RESULT_CUSTOM_ACTIVITY_INDICATOR_IMAGE to br.com.certiface.designsystem.R.drawable.success_icon,
+                FacetecDrawablesKey.FACETEC_RESULT_CUSTOM_ACTIVITY_INDICATOR_ANIMATION to br.com.certiface.facetecsdk.R.drawable.animated_activity_indicator_offwhite,
+                FacetecDrawablesKey.FACETEC_RESULT_ANIMATION_SUCCESS_BACKGROUND_IMAGE to br.com.certiface.designsystem.R.drawable.success_icon,
+                FacetecDrawablesKey.FACETEC_RESULT_ANIMATION_UNSUCESS_BACKGROUND_IMAGE to br.com.certiface.designsystem.R.drawable.error_icon,
+                FacetecDrawablesKey.FACETEC_RESULT_CUSTOM_ANIMATION_SUCCESS to br.com.certiface.facetecsdk.R.drawable.animated_success_offwhite,
+                FacetecDrawablesKey.FACETEC_RESULT_CUSTOM_ANIMATION_UNSUCCESS to br.com.certiface.facetecsdk.R.drawable.animated_unsuccess_offwhite,
+                FacetecDrawablesKey.FACETEC_CANCEL_BUTTON_CUSTOM_IMAGE to br.com.certiface.designsystem.R.drawable.close_icon,
                 FacetecDrawablesKey.FACETEC_OVERLAY_SHOW_BRANDING_IMAGE to "ic_launcher_foreground",
                 FacetecDrawablesKey.INSTRUCTIONS_FIRST_INSTRUCTION_ICON to R.drawable.backhand_left,
                 FacetecDrawablesKey.INSTRUCTIONS_SECOND_INSTRUCTION_ICON to "backhand_right",
@@ -160,19 +160,19 @@ object FacetecThemeFactory {
             resultScreenActivityIndicatorColor("#0F9D58")
             resultScreenUploadProgressFillColor("#0F9D58")
             resultScreenShowUploadProgressBar(true)
-            resultScreenCustomActivityIndicatorAnimation(br.com.oiti.facetecsdk.R.drawable.animated_activity_indicator)
+            resultScreenCustomActivityIndicatorAnimation(br.com.certiface.facetecsdk.R.drawable.animated_activity_indicator)
             resultScreenCustomActivityIndicatorRotationInterval(1000)
             resultScreenUploadProgressTrackColor("#66000000")
             resultScreenResultAnimationBackgroundColor("#417FB2")
             resultScreenResultAnimationForegroundColor("#FFFFFF")
-            resultScreenCustomActivityIndicatorImage(br.com.oiti.designsystem.R.drawable.success_icon)
+            resultScreenCustomActivityIndicatorImage(br.com.certiface.designsystem.R.drawable.success_icon)
 
-            resultScreenCustomStaticResultAnimationUnSuccess(br.com.oiti.designsystem.R.drawable.error_icon)
-            resultScreenCustomStaticResultAnimationSuccess(br.com.oiti.designsystem.R.drawable.success_icon)
-            resultScreenCustomResultAnimationUnSuccess(br.com.oiti.designsystem.R.drawable.error_icon)
-            resultScreenCustomResultAnimationSuccess(br.com.oiti.designsystem.R.drawable.success_icon)
-            resultScreenResultAnimationUnSuccessBackgroundImage(br.com.oiti.designsystem.R.drawable.error_icon)
-            resultScreenResultAnimationSuccessBackgroundImage(br.com.oiti.designsystem.R.drawable.success_icon)
+            resultScreenCustomStaticResultAnimationUnSuccess(br.com.certiface.designsystem.R.drawable.error_icon)
+            resultScreenCustomStaticResultAnimationSuccess(br.com.certiface.designsystem.R.drawable.success_icon)
+            resultScreenCustomResultAnimationUnSuccess(br.com.certiface.designsystem.R.drawable.error_icon)
+            resultScreenCustomResultAnimationSuccess(br.com.certiface.designsystem.R.drawable.success_icon)
+            resultScreenResultAnimationUnSuccessBackgroundImage(br.com.certiface.designsystem.R.drawable.error_icon)
+            resultScreenResultAnimationSuccessBackgroundImage(br.com.certiface.designsystem.R.drawable.success_icon)
 
             ovalCustomizationStrokeWidth(4)
             ovalCustomizationStrokeColor("#00FF00")
@@ -188,7 +188,7 @@ object FacetecThemeFactory {
             frameElevation(5)
 
             overlayBackgroundColor("#80000000")
-            overlayBrandingImage(br.com.oiti.designsystem.R.drawable.neutral_face)
+            overlayBrandingImage(br.com.certiface.designsystem.R.drawable.neutral_face)
 
             feedbackCornerRadius(12)
             overlayShowBrandingImage(true)
@@ -197,7 +197,7 @@ object FacetecThemeFactory {
             feedbackEnablePulsatingText(true)
             feedbackElevation(8)
 
-            cancelButtonCustomImage(br.com.oiti.designsystem.R.drawable.close_icon)
+            cancelButtonCustomImage(br.com.certiface.designsystem.R.drawable.close_icon)
             cancelButtonLocation(FacetecButtonLocation.TOP_RIGHT)
             exitAnimationStyle(FacetecExitAnimationStyle.RIPPLE_IN)
 
@@ -212,9 +212,9 @@ object FacetecThemeFactory {
                 setCaptionText("Mantenha-se dentro do círculo")
                 setStatusBarColor("#121212")
                 setStatusBarIsDarkIcons(false)
-                setContextImage(br.com.oiti.designsystem.R.drawable.env)
-                setBackButtonImg(br.com.oiti.designsystem.R.drawable.neutral_face)
-                setSecondInstructionIcon(br.com.oiti.designsystem.R.drawable.camera_alt)
+                setContextImage(br.com.certiface.designsystem.R.drawable.env)
+                setBackButtonImg(br.com.certiface.designsystem.R.drawable.neutral_face)
+                setSecondInstructionIcon(br.com.certiface.designsystem.R.drawable.camera_alt)
                 setFirstInstructionIcon(br.com.certiface.doc.designsystem.R.drawable.arrow_left_black)
                 setBackgroundColor("#121212")
                 setContinueButtonText("Começar")
@@ -228,9 +228,9 @@ object FacetecThemeFactory {
                 setSubTitleColor("#ffffff")
                 setBackgroundColor("#1F1F1F")
                 setStatusBarColor("#1F1F1F")
-                setBackButtonIcon(br.com.oiti.designsystem.R.drawable.close_icon)
+                setBackButtonIcon(br.com.certiface.designsystem.R.drawable.close_icon)
                 setBackgroundColor("#001100")
-                setCameraIcon(br.com.oiti.designsystem.R.drawable.neutral_face)
+                setCameraIcon(br.com.certiface.designsystem.R.drawable.neutral_face)
                 setPermissionButtonText("Permitir")
                 setPermissionButtonColor("#ff0000")
                 setPermissionButtonTextColor("#000000")

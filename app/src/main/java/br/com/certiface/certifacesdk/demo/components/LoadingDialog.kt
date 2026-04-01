@@ -16,8 +16,8 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.unit.dp
-import br.com.oiti.designsystem.theme.ApplyStatusBarStyle
 import br.com.certiface.certifacesdk.demo.ui.theme.CertifaceGreen
+import br.com.certiface.designsystem.theme.ApplyStatusBarStyle
 import kotlinx.coroutines.delay
 
 @Composable

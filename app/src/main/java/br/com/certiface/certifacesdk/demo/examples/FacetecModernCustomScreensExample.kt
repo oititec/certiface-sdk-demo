@@ -40,9 +40,9 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import br.com.certiface.doc.designsystem.theme.ApplyStatusBarStyle
-import br.com.oiti.facetecsdk.presentation.theme.FacetecTheme
-import br.com.oiti.facetecsdk.presentation.ui.builders.FacetecCustomScreensBuilder
+import br.com.certiface.designsystem.theme.ApplyStatusBarStyle
+import br.com.certiface.facetecsdk.presentation.theme.FacetecTheme
+import br.com.certiface.facetecsdk.presentation.ui.builders.FacetecCustomScreensBuilder
 
 object FacetecModernCustomScreensExample {
     fun createModernTheme(): FacetecTheme {
@@ -92,7 +92,7 @@ fun FacetecModernInstructionScreen(
 
     ApplyStatusBarStyle(
         color = Color(0xFF1976D2),
-        darkTheme = false
+        darkIcons = false
     )
 
     Scaffold(
@@ -271,7 +271,7 @@ fun FacetecModernPermissionScreen(
 
     ApplyStatusBarStyle(
         color = Color.White,
-        darkTheme = true
+        darkIcons = true
     )
 
     Scaffold(

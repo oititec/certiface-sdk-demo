@@ -1,6 +1,6 @@
 package br.com.certiface.certifacesdk.demo.extensions
 
-import br.com.oiti.manager.exports.LivenessResult
+import br.com.certiface.manager.exports.LivenessResult
 
 // extension helper
 fun LivenessResult.format(): String = """

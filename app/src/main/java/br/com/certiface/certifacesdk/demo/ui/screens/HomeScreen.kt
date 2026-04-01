@@ -10,36 +10,32 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
-import androidx.compose.ui.draw.clip
-import androidx.compose.ui.draw.shadow
-import androidx.compose.ui.graphics.Color
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.PlayArrow
 import androidx.compose.material.icons.filled.Settings
 import androidx.compose.material.icons.filled.SkipNext
 import androidx.compose.material.icons.filled.Visibility
-import androidx.compose.material3.Card
-import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
+import androidx.compose.ui.draw.shadow
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import br.com.oiti.manager.exports.LivenessResult
 import br.com.certiface.certifacesdk.demo.components.ProdutoToggleButtons
 import br.com.certiface.certifacesdk.demo.domain.model.Features
 import br.com.certiface.certifacesdk.demo.extensions.format
 import br.com.certiface.certifacesdk.demo.ui.components.SquareActionCard
 import br.com.certiface.certifacesdk.demo.ui.theme.CertifaceBlue
-import br.com.certiface.certifacesdk.demo.ui.theme.CertifaceGreen
 import br.com.certiface.certifacesdk.demo.ui.theme.CertifaceWhite
+import br.com.certiface.domain.model.LivenessResult
 
 @Composable
 fun HomeScreen(
@@ -93,7 +89,7 @@ fun HomeScreen(
                 letterSpacing = 0.5.sp
             )
         }
-        
+
         Spacer(Modifier.height(20.dp))
 
         // Card para configurações
@@ -134,7 +130,7 @@ fun HomeScreen(
                 )
 
                 Spacer(Modifier.height(16.dp))
-                
+
                 ProdutoToggleButtons(
                     features = features,
                     selected = selectedFeature,
@@ -142,9 +138,9 @@ fun HomeScreen(
                 )
             }
         }
-        
+
         Spacer(Modifier.height(24.dp))
-        
+
         Text(
             "Testes",
             fontSize = 18.sp,
@@ -181,125 +177,128 @@ fun HomeScreen(
                 modifier = Modifier.fillMaxWidth(),
                 horizontalArrangement = Arrangement.spacedBy(12.dp)
             ) {
-            Column(
-                modifier = Modifier.weight(1f),
-                verticalArrangement = Arrangement.spacedBy(12.dp)
-            ) {
-                SquareActionCard(
-                    title = if (isLoading) "Iniciando..." else "Default",
-                    description = "Teste padrão",
-                    icon = Icons.Default.PlayArrow,
-                    onClick = {
-                        onLoadingChange(true)
-                        onStartClick(
-                            appKey,
-                            selectedFeature,
-                            { msg ->
-                                onAddResult("OK: ${msg?.format()}")
-                            },
-                            { err ->
-                                onAddResult("ERRO: $err")
+                Column(
+                    modifier = Modifier.weight(1f),
+                    verticalArrangement = Arrangement.spacedBy(12.dp)
+                ) {
+                    SquareActionCard(
+                        title = if (isLoading) "Iniciando..." else "Default",
+                        description = "Teste padrão",
+                        icon = Icons.Default.PlayArrow,
+                        onClick = {
+                            onLoadingChange(true)
+                            onStartClick(
+                                appKey,
+                                selectedFeature,
+                                { msg ->
+                                    onAddResult("OK: ${msg?.format()}")
+                                },
+                                { err ->
+                                    onAddResult("ERRO: $err")
+                                    onLoadingChange(false)
+                                },
+                                false,
+                                false,
+                                onLoadingChange
+                            )
+                        },
+                        enabled = appKey.isNotBlank() && !isLoading,
+                        modifier = Modifier.fillMaxWidth(),
+                        primaryColor = CertifaceBlue
+                    )
+
+                    SquareActionCard(
+                        title = if (isLoading) "Iniciando..." else "Custom View",
+                        description = "Views customizadas",
+                        icon = Icons.Default.Visibility,
+                        onClick = {
+                            onLoadingChange(true)
+                            onStartClick(
+                                appKey,
+                                selectedFeature,
+                                { msg ->
+                                    onAddResult("OK: ${msg?.format()}")
+                                },
+                                { err ->
+                                    onAddResult("ERRO: $err")
+                                    onLoadingChange(false)
+                                },
+                                true,
+                                true,
+                                onLoadingChange
+                            )
+                        },
+                        enabled = appKey.isNotBlank() && !isLoading,
+                        modifier = Modifier.fillMaxWidth(),
+                        primaryColor = CertifaceBlue
+                    )
+                }
+
+                Column(
+                    modifier = Modifier.weight(1f),
+                    verticalArrangement = Arrangement.spacedBy(12.dp)
+                ) {
+                    SquareActionCard(
+                        title = if (isLoading) "Iniciando..." else "Custom",
+                        description = "Tema customizado",
+                        icon = Icons.Default.Settings,
+                        onClick = {
+                            onLoadingChange(true)
+                            onStartClick(
+                                appKey,
+                                selectedFeature,
+                                { msg ->
+                                    onAddResult("OK: ${msg?.format()}")
+                                },
+                                { err ->
+                                    onAddResult("ERRO: $err")
+                                    onLoadingChange(false)
+                                },
+                                true,
+                                false,
+                                onLoadingChange
+                            )
+                        },
+                        enabled = appKey.isNotBlank() && !isLoading,
+                        modifier = Modifier.fillMaxWidth(),
+                        primaryColor = CertifaceBlue
+                    )
+
+                    SquareActionCard(
+                        title = if (isLoading) "Iniciando..." else "Sem Instruções",
+                        description = "Pula instruções",
+                        icon = Icons.Default.SkipNext,
+                        onClick = {
+                            onLoadingChange(true)
+                            if (selectedFeature == Features.Document) {
+                                onAddResult("ERRO: Document não suporta pular a tela de instruções.")
                                 onLoadingChange(false)
-                            },
-                            false,
-                            false,
-                            onLoadingChange
-                        )
-                    },
-                    enabled = appKey.isNotBlank() && !isLoading,
-                    modifier = Modifier.fillMaxWidth(),
-                    primaryColor = CertifaceBlue
-                )
-                
-                SquareActionCard(
-                    title = if (isLoading) "Iniciando..." else "Custom View",
-                    description = "Views customizadas",
-                    icon = Icons.Default.Visibility,
-                    onClick = {
-                        onLoadingChange(true)
-                        onStartClick(
-                            appKey,
-                            selectedFeature,
-                            { msg ->
-                                onAddResult("OK: ${msg?.format()}")
-                            },
-                            { err ->
-                                onAddResult("ERRO: $err")
-                                onLoadingChange(false)
-                            },
-                            true,
-                            true,
-                            onLoadingChange
-                        )
-                    },
-                    enabled = appKey.isNotBlank() && !isLoading,
-                    modifier = Modifier.fillMaxWidth(),
-                    primaryColor = CertifaceBlue
-                )
-            }
-            
-            Column(
-                modifier = Modifier.weight(1f),
-                verticalArrangement = Arrangement.spacedBy(12.dp)
-            ) {
-                SquareActionCard(
-                    title = if (isLoading) "Iniciando..." else "Custom",
-                    description = "Tema customizado",
-                    icon = Icons.Default.Settings,
-                    onClick = {
-                        onLoadingChange(true)
-                        onStartClick(
-                            appKey,
-                            selectedFeature,
-                            { msg ->
-                                onAddResult("OK: ${msg?.format()}")
-                            },
-                            { err ->
-                                onAddResult("ERRO: $err")
-                                onLoadingChange(false)
-                            },
-                            true,
-                            false,
-                            onLoadingChange
-                        )
-                    },
-                    enabled = appKey.isNotBlank() && !isLoading,
-                    modifier = Modifier.fillMaxWidth(),
-                    primaryColor = CertifaceBlue
-                )
-                
-                SquareActionCard(
-                    title = if (isLoading) "Iniciando..." else "Sem Instruções",
-                    description = "Pula instruções",
-                    icon = Icons.Default.SkipNext,
-                    onClick = {
-                        onLoadingChange(true)
-                        if (selectedFeature == Features.Document) {
-                            onAddResult("ERRO: Document não suporta pular a tela de instruções.")
-                            onLoadingChange(false)
-                        } else {
-                            br.com.certiface.certifacesdk.demo.LivenessExecutor(appKey, selectedFeature)
-                                .executeLiveness(
-                                    context = context,
-                                    execOnSuccess = { result ->
-                                        onLoadingChange(false)
-                                        onAddResult("OK: ${result?.format()}")
-                                    },
-                                    execOnError = { throwable ->
-                                        onLoadingChange(false)
-                                        onAddResult("ERRO: ${throwable?.errorMessage ?: "erro desconhecido"}")
-                                    },
-                                    isCustomEnabled = true,
-                                    useCustomView = false,
-                                    showInstructionScreen = false
+                            } else {
+                                br.com.certiface.certifacesdk.demo.LivenessExecutor(
+                                    appKey,
+                                    selectedFeature
                                 )
-                        }
-                    },
-                    enabled = appKey.isNotBlank() && !isLoading,
-                    modifier = Modifier.fillMaxWidth(),
-                    primaryColor = CertifaceBlue
-                )
-            }
+                                    .executeLiveness(
+                                        context = context,
+                                        execOnSuccess = { result ->
+                                            onLoadingChange(false)
+                                            onAddResult("OK: ${result?.format()}")
+                                        },
+                                        execOnError = { throwable ->
+                                            onLoadingChange(false)
+                                            onAddResult("ERRO: ${throwable?.errorMessage ?: "erro desconhecido"}")
+                                        },
+                                        isCustomEnabled = true,
+                                        useCustomView = false,
+                                        showInstructionScreen = false
+                                    )
+                            }
+                        },
+                        enabled = appKey.isNotBlank() && !isLoading,
+                        modifier = Modifier.fillMaxWidth(),
+                        primaryColor = CertifaceBlue
+                    )
+                }
             }
         }
     }

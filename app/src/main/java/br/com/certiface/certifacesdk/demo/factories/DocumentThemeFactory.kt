@@ -185,7 +185,7 @@ object DocumentThemeFactory {
                     setStatusBarColor("#311B92")
                     setStatusBarIsDarkIcons(false)
                     setBackButtonIcon(R.drawable.test)
-                    setCameraIcon(br.com.oiti.designsystem.R.drawable.face)
+                    setCameraIcon(br.com.certiface.designsystem.R.drawable.face)
                     setPermissionButtonText("Permitir")
                     setPermissionButtonColor("#2196F3")
                     setPermissionButtonTextColor("#FFFFFF")

@@ -1,8 +1,8 @@
 package br.com.certiface.certifacesdk.demo.strategy
 
 import android.content.Context
-import br.com.oiti.domain.callback.CertifaceResultCallback
-import br.com.oiti.manager.exports.LivenessResult
+import br.com.certiface.domain.callback.CertifaceResultCallback
+import br.com.certiface.manager.exports.LivenessResult
 
 interface LivenessProviderStrategy {
     fun start(

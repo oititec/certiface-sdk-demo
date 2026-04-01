@@ -1,17 +1,16 @@
 package br.com.certiface.certifacesdk.demo
 
 import android.content.Context
-import br.com.oiti.domain.liveness.LivenessResponse
-import br.com.oiti.domain.model.ErrorResponse
-import br.com.oiti.manager.exports.Environment
-import br.com.oiti.manager.exports.LivenessResult
-import br.com.oiti.manager.exports.ResultCallback
-import br.com.oiti.manager.exports.SDKConfig
-import br.com.oiti.manager.main.CertifaceSDK
 import br.com.certiface.certifacesdk.demo.strategy.FacetecStrategy
 import br.com.certiface.certifacesdk.demo.strategy.IProovStrategy
 import br.com.certiface.certifacesdk.demo.strategy.LivenessProviderStrategy
 import br.com.certiface.certifacesdk.demo.domain.model.Features
+import br.com.certiface.domain.liveness.LivenessResponse
+import br.com.certiface.domain.model.ErrorResponse
+import br.com.certiface.manager.exports.Environment
+import br.com.certiface.manager.exports.LivenessResult
+import br.com.certiface.manager.exports.ResultCallback
+import br.com.certiface.manager.main.CertifaceSDK
 
 class LivenessExecutor(val appkey: String, val feature: Features) {
 
@@ -30,7 +29,7 @@ class LivenessExecutor(val appkey: String, val feature: Features) {
     ) {
         CertifaceSDK.initialize(
             context,
-            SDKConfig(
+            br.com.certiface.manager.exports.SDKConfig(
                 environment = Environment.HML,
                 appKey = appkey
             )

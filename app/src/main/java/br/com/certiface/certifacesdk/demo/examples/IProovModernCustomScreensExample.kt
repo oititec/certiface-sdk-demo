@@ -47,9 +47,9 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import br.com.certiface.doc.designsystem.theme.ApplyStatusBarStyle
-import br.com.oiti.iproov.presentation.ui.builders.IProovCustomScreensBuilder
-import br.com.oiti.manager.exports.IProovTheme
+import br.com.certiface.designsystem.theme.ApplyStatusBarStyle
+import br.com.certiface.domain.model.iproov.IProovTheme
+import br.com.certiface.iproov.presentation.ui.builders.IProovCustomScreensBuilder
 
 object IProovModernCustomScreensExample {
     fun createModernTheme(): IProovTheme {
@@ -109,7 +109,7 @@ fun IProovModernInstructionScreen(
 
     ApplyStatusBarStyle(
         color = Color(0xFF4CAF50),
-        darkTheme = false
+        darkIcons = false
     )
 
     Scaffold(
@@ -288,7 +288,7 @@ fun IProovModernPermissionScreen(
 
     ApplyStatusBarStyle(
         color = Color.White,
-        darkTheme = true
+        darkIcons = true
     )
 
     Scaffold(
@@ -460,7 +460,7 @@ fun IProovModernResultScreen(
 
     ApplyStatusBarStyle(
         color = if (success) Color(0xFF00C853) else Color(0xFFE53935),
-        darkTheme = false
+        darkIcons = false
     )
 
     Box(

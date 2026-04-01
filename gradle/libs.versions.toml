@@ -22,7 +22,7 @@ appcompat = "1.7.1"
 material = "1.13.0"
 
 # exported oiti modules
-oitiSDKVersion = "1.1.0"
+oitiSDKVersion = "1.1.0-snapshot-2"
 certifaceDocSDKVersion = "1.0.0"
 
 # Compose
@@ -87,8 +87,8 @@ dagger-android = { module = "com.google.dagger:dagger-android", version.ref = "d
 # =========================
 # PRODUTOS OITI (Modulos apartados)
 # =========================
-oiti-sdk = { module = "br.com.oiti:oitisdk", version.ref = "oitiSDKVersion" }
-certiface-doc-sdk = { module = "br.com.certiface:manager", version.ref = "certifaceDocSDKVersion" }
+oiti-sdk = { module = "br.com.certiface:certifacesdk", version.ref = "oitiSDKVersion" }
+certiface-doc-sdk = { module = "br.com.certiface.doc:manager", version.ref = "certifaceDocSDKVersion" }
 
 # =========================
 # TESTES (JUnit, Espresso, Compose Test)
