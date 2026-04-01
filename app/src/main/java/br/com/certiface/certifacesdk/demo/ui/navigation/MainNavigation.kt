@@ -18,6 +18,7 @@ import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.compose.foundation.layout.navigationBars
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.filled.List
 import androidx.compose.material.icons.filled.Home
 import androidx.compose.material.icons.filled.Key
 import androidx.compose.material.icons.filled.List
@@ -41,7 +42,7 @@ enum class NavigationTab(
 ) {
     HOME("Home", Icons.Default.Home),
     CREDENTIAL("Credencial", Icons.Default.Key),
-    RESULTS("Resultados", Icons.Default.List)
+    RESULTS("Resultados", Icons.AutoMirrored.Filled.List)
 }
 
 @Composable
