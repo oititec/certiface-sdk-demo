@@ -16,7 +16,7 @@ android {
         minSdk = 26
         targetSdk = 36
         versionCode = 1
-        versionName = libs.versions.oitiSDKVersion.get()
+        versionName = libs.versions.certifaceSDKVersion.get()
 
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
@@ -83,7 +83,7 @@ dependencies {
     implementation(libs.okhttp.logging)
 
     implementation(libs.certiface.doc.sdk)
-    implementation(libs.oiti.sdk)
+    implementation(libs.certiface.sdk)
 
     // Test implementations
     testImplementation(libs.junit)
